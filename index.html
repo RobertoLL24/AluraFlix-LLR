@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraFlix</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link" id="new-video-btn">Nuevo video</a>
+        </div>
+        <div class="nav-right">
+            <img src="./imagenes/logo.png" alt="Logo" class="logo">
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-left">
+            <h1>Front End</h1>
+            <h4>Challenge React</h4>
+            <p>Bienvenido a AluraFlix
+
+                ¡Sumérgete en un mundo de ritmos y melodías! En AluraFlix, te ofrecemos una experiencia única para disfrutar de la mejor música y los videos más emocionantes. Desde los últimos éxitos hasta clásicos, nuestro objetivo es llevar la magia de la música directamente a tus oídos y los videos más impactantes a tus ojos.
+                
+                Explora nuestras colecciones, descubre nuevos artistas y encuentra tus canciones favoritas. Ya sea que estés buscando relajarte, motivarte, o simplemente disfrutar, tenemos algo especial para cada ocasión.
+                
+                Además, te ofrecemos una plataforma interactiva donde puedes crear tus propias listas de reproducción.
+                
+                ¡Comienza tu viaje musical con nosotros hoy mismo y siente la energía que solo la buena música y los videos increíbles pueden brindar!</p>
+        </div>
+        <div class="welcome-right">
+            <img src="./imagenes/bienvenida.jfif" alt="Welcome Image">
+        </div>
+    </section>
+
+    <!-- Video Library Section -->
+    <section class="video-library">
+        <div class="video-container" id="video-container">
+            <!-- Videos will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Add New Video Section -->
+    <section class="new-video-section" id="new-video-section" style="display: none;">
+        <h2>Agregar Nuevo Video</h2>
+        <form id="new-video-form">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" required>
+            <label for="category">Categoría</label>
+            <input type="text" id="category" name="category" required>
+            <label for="image-url">URL de la Imagen</label>
+            <input type="url" id="image-url" name="image-url" required>
+            <label for="video-url">URL del Video</label>
+            <input type="url" id="video-url" name="video-url" required>
+            <label for="description">Descripción del Video</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Guardar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./imagenes/logo.png" alt="Logo" class="logo">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
